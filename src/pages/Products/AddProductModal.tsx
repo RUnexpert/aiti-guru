@@ -57,8 +57,11 @@ export const AddProductModal = ({ visible, onClose, onAdd }: Props) => {
         <InputText
           placeholder="Цена"
           type="number"
-          value={price}
-          onChange={(e) => setPrice(+e.target.value)}
+          value={price.toString()}
+          onChange={(e) => {
+            const value = Number(e.target.value);
+            setPrice(Number.isNaN(value) ? 0 : value);
+          }}
         />
 
         <InputText
