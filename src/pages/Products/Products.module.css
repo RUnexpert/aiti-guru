@@ -1,0 +1,67 @@
+.progress {
+  height: 3px;
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.title {
+  position: absolute;
+  left: 30px;
+}
+
+.ratingBad {
+  color: red;
+  font-weight: 600;
+}
+
+.ratingGood {
+  color: #111;
+}
+
+.header {
+  padding: 25px;
+  padding-left: 180px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputContainer {
+  max-width: 1024px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+}
+
+.toolbar {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tableContainer {
+  margin-top: 30px;
+  padding: 0 30px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.tableWrapper :global(.p-datatable-thead > tr > th) {
+  background-color: #fff;
+}

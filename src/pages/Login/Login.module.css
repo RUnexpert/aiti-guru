@@ -1,0 +1,49 @@
+.wrapper {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 32px;
+  border-radius: 12px;
+}
+
+.logo {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 24px;
+  background: url('../../public/assets/svg/vite.svg') no-repeat center;
+}
+
+.title {
+  margin: 0 0 4px;
+}
+
+.subtitle {
+  font-size: 14px;
+}
+
+.form {
+  margin-top: 24px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.passwordContainer {
+  margin-top: 40px;
+}
+
+.passwordInput,
+.loginInput {
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
